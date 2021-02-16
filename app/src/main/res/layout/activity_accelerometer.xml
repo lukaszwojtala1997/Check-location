@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    tools:context=".Accelerometer">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/akcelerator"
+        android:text="Wskazania akcelometru:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf = "@+id/X"
+        app:layout_constraintTop_toBottomOf ="@id/akcelerator"/>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf = "@+id/X"
+        app:layout_constraintTop_toBottomOf ="@id/textView1"/>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/X"
+        app:layout_constraintTop_toBottomOf="@+id/Y" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="accelerometer_back"
+        android:text="Button" />
+
+
+</LinearLayout>
